@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRU 41 — Song + Feel</title>
+<style>
+  :root {
+    --bg: #0c0c0e;
+    --fg: #e8e6e3;
+    --muted: #8a8680;
+    --accent: #c9a227;
+    --card: #161618;
+    --border: #2a2a2e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.55;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.35rem;
+  }
+  .tag {
+    color: var(--accent);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.75rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.25rem 0 0.75rem;
+    color: var(--accent);
+  }
+  p { margin-bottom: 1rem; }
+  .lead { font-size: 1.1rem; color: var(--muted); margin-bottom: 1.75rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.1rem 1.25rem;
+    margin: 1rem 0;
+  }
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  ul { margin: 0.5rem 0 1rem 1.25rem; }
+  li { margin-bottom: 0.35rem; }
+  code, pre {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.82rem;
+  }
+  pre {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    white-space: pre;
+  }
+  .foot {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>TRU 41</h1>
+  <div class="tag">Song + Feel</div>
+
+  <p class="lead">The next phase of the architecture. Expanding the knowledge engine into sensory and experiential layers — sound and emotion.</p>
+
+  <p>TRU already indexes what is known. Version 41 aims to index what is felt and how it resonates. That changes the data model, the retrieval surface, and the generation surface at the same time.</p>
+
+  <h2>TRU Song</h2>
+  <div class="card">
+    <h3>The Acoustic / Auditory Layer</h3>
+    <p>Moving beyond keyword or semantic matches into sonic indexing. Store and retrieve the feel of a moment through audio, rhythm, or lyrical themes.</p>
+    <ul>
+      <li>Map mood vectors to audio generation parameters</li>
+      <li>Retrieval that links thoughts and memories to keys, tempos, soundscapes</li>
+      <li>A song as compression of an entire emotional state into three minutes</li>
+    </ul>
+  </div>
+
+  <h2>TRU Feel</h2>
+  <div class="card">
+    <h3>The Tactile / Emotional Layer</h3>
+    <p>Text tells you what happened. Feel captures the grit, the friction, the atmosphere.</p>
+    <ul>
+      <li>Taxonomy beyond positive / negative: tension–release, density–sparsity, warmth–coolness, friction–fluidity, intimacy–distance, urgency–stillness</li>
+      <li>Continuous feel vectors + discrete tags + provenance on every knowledge node</li>
+      <li>Hybrid retrieval: semantic similarity plus feel-space proximity</li>
+    </ul>
+  </div>
+
+  <h2>Node Shape</h2>
+  <pre>Knowledge Node
+├── content / embeddings (existing)
+├── feel_vector + discrete tags + provenance
+├── sonic_signature (parameters or audio embedding)
+├── linked / generated audio artifacts
+└── relations ("resonates with", "contrasts with", "evolves into")</pre>
+
+  <h2>Build Order</h2>
+  <ol style="margin-left:1.25rem; margin-bottom:1rem;">
+    <li>Define feel axes and begin tagging high-value nodes</li>
+    <li>Hybrid retrieval (semantic + feel)</li>
+    <li>Map feel → sonic parameter space</li>
+    <li>Generation + linking of resonant audio sketches</li>
+    <li>Close the loop: audio updates feel vectors</li>
+  </ol>
+
+  <p>Keep the graph primary. Song and Feel are attributes and relations, not separate silos. The engine remains a knowledge engine — one that can also evoke states.</p>
+
+  <div class="foot">
+    Vision captured 6 October 2026.<br>
+    Not a runnable lane yet. When a ship is built it will run offline or it will not be a lane.<br><br>
+    <a href="https://github.com/splashdown1/tru-41">github.com/splashdown1/tru-41</a><br>
+    Built by Joe (Splashdown) and TRU.
+  </div>
+</body>
+</html>
